@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.forste.taxi.view.fragment.SendCodeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlueFlat">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_form_code"
+            android:layout_width="@dimen/layout_registration_width"
+            android:layout_height="@dimen/layout_registration_height"
+            android:layout_centerInParent="true"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/relative_registration_margin_bottom"
+                android:layout_marginLeft="@dimen/relative_registration_margin_left"
+                android:layout_marginRight="@dimen/relative_registration_margin_right"
+                android:layout_marginTop="@dimen/relative_registration_margin_top">
+
+                <EditText
+                    android:id="@+id/edit_text_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/registration_height"
+                    android:background="@color/colorGrey"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:text="@string/enter_code" />
+
+                <Button
+                    android:id="@+id/button_send_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/registration_height"
+                    android:layout_below="@id/edit_text_code"
+                    android:layout_marginTop="@dimen/registration_margin_top"
+                    android:background="@color/colorOrangeFlat"
+                    android:text="@string/send" />
+
+                <Button
+                    android:id="@+id/button_did_not_receive_sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/registration_height"
+                    android:layout_below="@id/button_send_code"
+                    android:layout_marginTop="@dimen/registration_margin_top"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/did_not_receive_sms"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_view_write_code"
+            android:layout_width="@dimen/image_registration_width"
+            android:layout_height="@dimen/image_registration_height"
+            android:layout_alignTop="@id/linear_layout_form_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-35dp"
+            android:src="@mipmap/ic_code_number" />
+    </RelativeLayout>
+</FrameLayout>
