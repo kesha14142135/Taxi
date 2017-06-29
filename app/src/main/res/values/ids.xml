@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="error_phone_number_min" type="id">Меньше 10 цифр</item>
+    <item name="error_phone_number_max" type="id">Больше 13 цифр</item>
+</resources>

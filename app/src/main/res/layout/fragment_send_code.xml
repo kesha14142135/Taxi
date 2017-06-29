@@ -33,7 +33,7 @@
                     android:background="@color/colorGrey"
                     android:inputType="numberDecimal"
                     android:gravity="center"
-                    android:text="@string/enter_code" />
+                    android:hint="@string/enter_code" />
 
                 <Button
                     android:id="@+id/button_send_code"

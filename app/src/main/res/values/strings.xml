@@ -10,9 +10,13 @@
     <string name="hint_frow_where">Откуда</string>
     <string name="hint_where">Куда</string>
     <string name="enter_telephone_number">Введите номер телефона</string>
-    <string name="send">Отправить</string>
+    <string name="send">ОТПРАВИТЬ</string>
     <string name="enter_without_registration">Войти без авторизации</string>
     <string name="enter_code">Введите код подтверждения</string>
     <string name="did_not_receive_sms">Вы не получили смс?</string>
     <string name="title_activity_registration">Registration</string>
+    <string name="error_phone_number_empty">Заполните поле</string>
+    <string name="error_phone_number_min">(xxx) xxx xxxx</string>
+    <string name="error_code_empty">Введите код</string>
+    <string name="error_code_min">xxxx</string>
 </resources>

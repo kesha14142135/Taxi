@@ -4,14 +4,14 @@ package com.forste.taxi.contract;
  * Created by sergejkozin on 6/29/17.
  */
 
-public interface SendNumberContract {
+public interface SendCodeContract {
     interface View extends BaseContract.View {
-        void onSuccessSendTelephoneNumber();
+        void onSuccessSendCode();
 
-        void onFailingSendTelephoneNumber();
+        void onFailingSendCode();
     }
 
     interface Presenter extends BaseContract.Presenter<View> {
-        void addNumberPhone(String numberPhone);
+        void addCode(String code);
     }
 }

@@ -7,12 +7,26 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorBlueFlat</item>
+        <item name="colorPrimaryDark">@color/colorBlueFlat</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="android:editTextStyle">@style/AppTheme.Widget.EditText</item>
+        <item name="android:buttonStyle">@style/AppTheme.Widget.Button</item>
+
     </style>
 
-    <style name="AppTheme.AppBarOverlay" />
+    <style name="AppTheme.Widget"/>
 
-    <style name="AppTheme.PopupOverlay"  />
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/OpenSans-Light.ttf</item>
+    </style>
+    <style name="AppTheme.Widget.EditText" parent="android:Widget.Holo.Light.EditText">
+        <item name="fontPath">fonts/OpenSans-Light.ttf</item>
+    </style>
+    <style name="AppTheme.Widget.Button" parent="android:Widget.Holo.Light.Button">
+        <item name="fontPath">fonts/OpenSans-Light.ttf</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" />
+    <style name="AppTheme.PopupOverlay" />
 </resources>

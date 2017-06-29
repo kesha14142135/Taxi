@@ -23,11 +23,12 @@
         </activity>
         <activity
             android:name=".view.activity.HomeActivity"
-            android:label="@string/title_activity_home" />
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".view.activity.RegistreActivity"
-            android:launchMode="singleTop"
-            android:label="@string/title_activity_registration" />
+            android:name=".view.activity.RegistretionActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
